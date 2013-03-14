@@ -1,0 +1,60 @@
+<html>
+<head>
+  <title>Example 2: Lets Get Templating!</title>
+</head>
+<body>
+  <a href="../index.html"><-- Back</a>
+  <h1>Example 2: Lets Get Templating!</h1>
+
+  <div id="nameTag">Shawn</div>
+
+  <br>
+
+  <div class="outer">This div is not effected by the shadow dom's styles</div>
+
+
+<!-- Below is a simple template for our name tags. -->
+
+<template id="nameTagTemplate">
+  <style>
+    .outer {
+      border: 2px solid brown;
+      border-radius: 1em;
+      background: red;
+      font-size: 20pt;
+      width: 12em;
+      height: 7em;
+      text-align: center;
+    }
+    .boilerplate {
+      color: white;
+      font-family: sans-serif;
+      padding: 0.5em;
+    }
+    .name {
+      color: black;
+      background: white;
+      font-family: "Marker Felt", cursive;
+      font-size: 45pt;
+      padding-top: 0.2em;
+    }
+  </style>
+  <div class="outer">
+    <div class="boilerplate">
+      Hi! My name is
+    </div>
+    <div class="name">
+      Shawn
+    </div>
+  </div>
+</template>
+
+<script>
+var shadow = document.querySelector('#nameTag').webkitCreateShadowRoot();
+var template = document.querySelector('#nameTagTemplate');
+shadow.appendChild(template.content);
+template.remove();
+</script>
+
+</body>
+</html>

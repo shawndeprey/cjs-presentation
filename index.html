@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Cascadia JS Conference: November 8 & 9, 2012</title>
+		<meta name="description" content="A new Javascript conference located in Seattle. This conference looked not only at the awesome things you can do with JS, but also at the future of the language.">
+		<meta name="author" content="Shawn Deprey">
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<script>document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );</script>
+	</head>
+
+	<body>
+		<div class="reveal">
+			<div class="slides">
+
+				<section>
+					<h1>CascadiaJS</h1>
+					<h3>November 8, 2012 & November 9, 2012</h3>
+					<p><small>Created by <a href="https://twitter.com/ShawnDeprey1">Shawn Deprey</a></small></p>
+				</section>
+
+				<section>
+					<h2>What is CascadiaJS?</h2>
+					<ul>
+						<li class="fragment">A place to look at cool things people are doing with JS</li>
+						<li class="fragment">A place to look at the future of JS</li>
+						<li class="fragment">A place to meet developers</li>
+					</ul>
+					<aside class="notes">
+						Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+					</aside>
+				</section>
+
+				<section>
+					<h2>What are people doing with JS?</h2>
+					<ul>
+						<li class="fragment">Building Applications</li>
+						<li class="fragment">Building Servers: <a href="http://nodejs.org/">Node.js</a></li>
+						<li class="fragment">Building Development Frameworks</li>
+						<li class="fragment">Interfacting with Hardware</li>
+						<li class="fragment">Modifying the language</li>
+						<li class="fragment">and of course...building awesome presentations...</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Applications, Frameworks, and Servers</h2>
+						<p class="fragment">As with all topics at this conference, there were many...</p>
+						<h3 class="fragment">Varying Opinions</h3>
+					</section>
+					<section>
+						<h2>Kit Cambridge</h2>
+						<h3>Sail</h3>
+						<p style="font-size:26px;"><strong><i>Sail</i></strong> is a general purpose web framework for app development, including a <a href="http://nodejs.org/">node.js</a> server solution.</p>
+						<p style="font-size:26px;">Cambridge's suggestions in app development:</p>
+						<ul style="font-size:26px;">
+							<li class="fragment">Use general purpose solutions over micro libraries.</li>
+							<li class="fragment">Stop making plugins!</li>
+							<li class="fragment">Accept Constraints</li>
+							<li class="fragment">Reduce Abstractions</li>
+							<li class="fragment">Know all browsers bugs and ensure you have work arounds</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Tom Rudick</h2>
+						<h3>Windows Azure</h3>
+						<p>An extremely simplified app and server development framework.</p>
+						<p style="font-size:26px;">Features:</p>
+						<ul style="font-size:26px;">
+							<li class="fragment">Easy service creation using node.js</li>
+							<li class="fragment">Easy app creation using javascript
+								<ul>
+									<li class="fragment">Sleek web interface</li>
+								</ul>
+							</li>
+							<li class="fragment">Web interface allows easy management of apps and services</li>
+							<li class="fragment">Many pre-built services such as texting through apps</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Itay Neeman</h2>
+						<h3>Splunk & bigdata.js</h3>
+						<p>Splunk offers extremely fast and powerful data/feed management server software focusing on live data.</p>
+						<p>Simple solution with extreme power:</p>
+						<ul style="font-size:26px;">
+							<li class="fragment"><a href="http://nodejs.org/">node.js</a></li>
+							<li class="fragment">JSON Feeds</li>
+							<li class="fragment">Ask your data questions</li>
+						</ul>
+						<p class="fragment">In my opinion...this is a fantastic use of javascript! We should make note of this when designing systems!</p>
+					</section>
+					<section>
+						<h2>John-David Dalton</h2>
+						<h3>Lo-Dash</h3>
+						<p><a href="http://lodash.com/">Lo-Dash</a> is a drop-in replacement for Underscore.js that delivers performance, bug fixes, and additional features.</p>
+						<ul style="font-size:26px;">
+							<li class="fragment"><h4>Performance</h4>
+								<ul>
+									<li class="fragment">Avoid native methods. This gives performance and compatibility.</li>
+									<li class="fragment">Reduce number of function calls</li>
+									<li class="fragment">Use method compilation<span style="font-size:20px; font-style:italic;">(Dynamically creating a method at run time that is optimized for your current environment.)</span></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h3>Lo-Dash</h3>
+						<ul style="font-size:26px;">
+							<li><h4>Bug Fixes</h4>
+								<ul>
+									<li class="fragment">Provides bug fixes for issues we see in certain browsers, making a dev environment that is the same across all browsers.</li>
+								</ul>
+							</li>
+							<li class="fragment"><h4>Features</h4>
+								<ul>
+									<li class="fragment">AMD support out of the box <span style="font-size:20px; font-style:italic;">(Asyncronous Module Definitions)</a></li>
+									<li class="fragment">Deep cloning capability</li>
+									<li class="fragment">Much more...</li>
+								</ul>
+							</li>
+							<li class="fragment"><h4>Builds, minification, compiling, and unit tests.</h4>
+								<ul>
+									<li class="fragment">Self explanatory...</li>
+								</ul>
+							</li>
+						</ul>
+						<p class="fragment">This is an awesome architecture that we should look into using.</p>
+					</section>
+					<section>
+						<h2>Finally...What can we say?</h2>
+						<ul>
+							<li class="fragment">Varying opinions in app development & architectures</li>
+							<li class="fragment">Great ideas on service and data setups</li>
+							<li class="fragment">I like <a href="http://nodejs.org/">node.js</a> given it's the correct solution for your app.</li>
+							<li class="fragment">I will be looking to use <a href="http://lodash.com/">Lo-Dash</a> in the future.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>The Future of Javascript</h2>
+						<p class="fragment">Out of the entire conference, 2 projects stuck out to me:</p>
+						<h3 class="fragment"><a href="javascript:void(0)">Shadow DOM</a> & <a href="http://requirejs.org/">require.js</a></h3>
+					</section>
+					<section>
+						<h2>Angelina Fabbro</h2>
+						<h3>Shadow DOM</h3>
+						<ul style="font-size:26px; ">
+							<li class="fragment"><span style="color: #13DAEC;">Shadow DOM</span>: A small document that lives inside of its host element. The parent element essentially doesn’t know anything about the child shadow element.</li>
+							<li class="fragment"><span style="color: #13DAEC;">Example:</span> HTML5 video tag. You can edit the video controls using the Shadow DOM.</li>
+						</ul>
+						<p class="fragment">What does the Shadow DOM accomplish?</p>
+						<ul>
+							<li class="fragment">Encapsulation</li>
+							<li class="fragment">Less complex element selection. <span style="font-size:20px; font-style:italic;">i.e. Simplified CSS selectors</span></li>
+							<li class="fragment">Shadow DOM is being included in the next version of google chrome</span></li>
+						</ul>
+					</section>
+					<section>
+						<h3>HTML Templating and Custom DOM Elements</h3>
+						<img src="code1.png" height="75%" width="90%" alt="HTML Templating" style="border:none;" />
+					</section>
+					<section>
+						<h2>Merrick Christensen</h2>
+						<h3>require.js</h3>
+						<p class="fragment">In short...turns javascript into a big boy language. require.js adds:</p>
+						<ul>
+							<li class="fragment">An Object Oriented Environment</li>
+							<li class="fragment">Inheritance</li>
+							<li class="fragment">private & public access modifiers</li>
+							<li class="fragment">require functionality <span style="font-size:20px; font-style:italic;">(i.e. require("another_file.js");</span>
+								<ul>
+									<li class="fragment">You can require files besides JS files <span style="font-size:20px; font-style:italic;">i.e. CoffeeScript</span></li>
+								</ul>
+							</li>
+							<li class="fragment">Graceful app restarting</li>
+							<li class="fragment">Tons More!</li>
+						</ul>
+					</section>
+					<section>
+						<h2>Finally...What can we say?</h2>
+						<ul>
+							<li class="fragment">Fabbro and Christensen's ideas vary from other speakers like Tom Rudick.</li>
+							<li class="fragment">This is where I believe JS is heading</li>
+							<li class="fragment">I will definitely be using <a href="http://requirejs.org/">require.js</a> in the future.</li>
+						</ul>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Hardware and Robots Controled With JS</h2>
+						<img src="wtf.jpg" height="65%" width="80%" alt="HTML Templating" style="border:none;" class="fragment" />
+					</section>
+					<section>
+						<h3>Emily Rose</h3>
+						<p class="fragment">Controls a fog machine, interractive lights, and a sound system with JS.</p>
+						<h3 class="fragment">Rick Waldron</h3>
+						<p class="fragment">Programs robots with JS. Had a robot walk and dance for us.</p>
+						<h3 class="fragment">Chris Castle</h3>
+						<p class="fragment">Keg + node.js = beer over JS</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>What was learned?</h2>
+						<ul>
+							<li class="fragment">Javascript is going to become a more powerful language in the future, with the ability to use more a more conventional OO model.</li>
+							<li class="fragment">We should keep our eyes on: jquery, node.js, require.js, Shadow DOM, and Lo-Dash</li>
+							<li class="fragment">My Final Question...
+								<ul>
+									<li class="fragment">Where the hell was the games segment?!</li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</section>
+
+			</div>
+
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/none
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/showdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+					// { src: 'plugin/remotes/remotes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

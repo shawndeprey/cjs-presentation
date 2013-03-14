@@ -1,0 +1,15 @@
+<html>
+<head>
+  <title>Example 1: A Simple Introduction</title>
+</head>
+<body>
+  <a href="../index.html"><-- Back</a>
+  <h1>Example 1: A Simple Introduction</h1>
+  <p>The shadow dom allows us to template html elements. For instance, the following button is being being modified by the shadow root. Our shadow root template is saying that the text of the shadow host should be different that what the host declared.</p>
+  <button>This is some text</button>
+  <script>
+    var root = document.querySelector('button').webkitCreateShadowRoot();
+    root.textContent = 'Yeah right host! This is what your text should be!';
+  </script>
+</body>
+</html>
